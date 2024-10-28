@@ -1,8 +1,8 @@
 {
-  "name": "@org/source",
-  "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run highlight.js-svelte:build"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
