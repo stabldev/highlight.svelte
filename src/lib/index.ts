@@ -1,1 +1,3 @@
-// Reexport your entry components here
+import svelte from "./svelte.js";
+
+export default svelte;
