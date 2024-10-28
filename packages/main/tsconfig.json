@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "exactOptionalPropertyTypes": false,
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["./src/**/*.ts"]
 }
