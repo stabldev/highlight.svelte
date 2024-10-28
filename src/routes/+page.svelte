@@ -8,7 +8,7 @@
   import xml from "highlight.js/lib/languages/xml";
   import svelte from "$lib/index.js";
 
-  const _source = `
+  const code = `
 <script lang="ts">
   let count: number = 0;
   () => count++;
@@ -26,7 +26,14 @@
   {/each}
 </ul>
 
-{@debug value}`;
+{@debug value}
+
+<style>
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+<\/style>`;
 
   hljs.registerLanguage("javascript", javascript);
   hljs.registerLanguage("typescript", typescript);
@@ -34,7 +41,7 @@
   hljs.registerLanguage("css", css);
   hljs.registerLanguage("svelte", svelte);
 
-  const html = hljs.highlight(_source, { language: "svelte" }).value;
+  const html = hljs.highlight(code, { language: "svelte" }).value;
 </script>
 
 <svelte:head>
@@ -43,7 +50,8 @@
 
 <h1>highlight.js-svelte</h1>
 
-<pre>
+<pre
+  style="background-color: lightcyan; margin: 0; padding: 1rem; width: max-content;">
   <code>
     {@html html}
   </code>
