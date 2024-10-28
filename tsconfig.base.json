@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "composite": true,
+    // "composite": true,
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
@@ -11,7 +11,6 @@
     "experimentalDecorators": false,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "incremental": true,
     "isolatedModules": true,
     "lib": ["es2022"],
     "module": "NodeNext",
@@ -30,5 +29,10 @@
     "strict": true,
     "target": "es2022",
     "verbatimModuleSyntax": false
-  }
+  },
+  "exclude": [
+    "**/node_modules",
+    "**/build",
+    "**/dist"
+  ]
 }

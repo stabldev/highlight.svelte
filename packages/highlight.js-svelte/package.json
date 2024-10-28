@@ -1,0 +1,50 @@
+{
+  "name": "highlight.js-svelte",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Svelte language definition for highlight.js",
+  "author": "moonlitgrace",
+  "license": "MIT",
+  "homepage": "https://github.com/moonlitgrace/highlight.js-svelte#readme",
+  "bugs": {
+    "url": "https://github.com/moonlitgrace/highlight.js-svelte/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonlitgrace/highlight.js-svelte.git",
+    "directory": "packages/highlight.js-svelte"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "keywords": [
+    "highlight.js",
+    "svelte",
+    "hljs"
+  ],
+  "devDependencies": {
+    "@types/highlight.js": "^9.12.4",
+    "@types/node": "^22.8.1",
+    "highlight.js": "^11.10.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
