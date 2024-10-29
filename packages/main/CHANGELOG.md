@@ -1,5 +1,12 @@
 # highlight.svelte
 
+## 0.0.4
+
+### Patch Changes
+
+- 67803ac: docs: minor update
+- 9e4c5da: docs: update with proper guide
+
 ## 0.0.3
 
 ### Patch Changes
