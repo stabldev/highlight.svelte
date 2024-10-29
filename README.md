@@ -1,89 +1,96 @@
-# Org
+# <img src="https://svelte.dev/favicon.png" height="40"> highlight.svelte
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+**Svelte** Language Definition for highlight.js with Typescript support.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/highlight.svelte?style=for-the-badge)
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## Installation
 
-## Finish your CI setup
-
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/DddHPA89Mo)
-
-## Generate a library
-
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+```bash
+npm i highlight.js highlight.svelte
 ```
 
-## Run tasks
+## Importing the Lib
 
-To build the library use:
+To use the Svelte language definition with `highlight.js`, you have two options for importing:
 
-```sh
-npx nx build pkg1
+### 1. Optimized Imports (Recommended)
+
+```js
+// import core hljs api and register required languages
+import hljs from 'highlight.js/lib/core';
+
+import javascript from 'highlight.js/lib/languages/javascript';
+// optional: if you are using 'lang="ts"'
+import typescript from 'highlight.js/lib/languages/typescript';
+import css from 'highlight.js/lib/languages/css';
+import xml from 'highlight.js/lib/languages/xml';
+import svelte from 'highlight.svelte';
+
+// register each language definition
+hljs.registerLanguage([lang-name], [lang-module]);
+```
+### 2. Full Import (Less Optimal)
+
+If you prefer to load all languages provided by `highlight.js`, you can use this approach. However, this may significantly increase your bundle size since it imports all available languages.
+
+```js
+import hljs from 'highlight.js';
+import svelte from 'highlight.svelte';
+
+hljs.registerLanguage('svelte', svelte);
 ```
 
-To run any task with Nx use:
+## Usage
 
-```sh
-npx nx <target> <project-name>
+Follow recommended way of [importing](#1-optimized-imports-recommended).\
+Usage examples are based on [less optimal way](#2-full-import-less-optimal) to reduce docs length.
+
+### Node.js / `require`
+
+```js
+const hljs = require('highlight.js');
+hljs.registerLanguage('svelte', require('highlight.svelte'));
+
+const highlightedCode = hljs.highlight(code, { language: 'svelte' }).value;
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+### ES6 Modules / `import`
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```js
+import hljs from 'highlight.js';
+import svelte from 'highlight.svelte';
 
-## Versioning and releasing
-
-To version and release the library use
-
-```
-npx nx release
+hljs.registerLanguage('svelte', svelte);
 ```
 
-Pass `--dry-run` to see what would happen without actually releasing the library.
+### Browser / `cdn`
 
-[Learn more about Nx release &raquo;](hhttps://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```html
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="https://unpkg.com/highlight.svelte@latest/dist/svelte.min.js"></script>
 
-## Keep TypeScript project references up to date
+<script>hljs.highlightAll();</script>
 
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
-
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
-
-```sh
-npx nx sync
+<pre><code class="language-svelte">{code}</code></pre>
 ```
 
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
+## Development
 
-```sh
-npx nx sync:check
+Project is powered by nx workspace.\
+Follow basic steps:
+1. clone repo
+2. `cd` into dir
+3. `npm i`
+
+```bash
+npm run dev
 ```
 
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
+This will build package and spin up an example svelte-vite app with package installed.\
+Visit: [localhost:5173](http://localhost:5173)
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## Credits
 
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Project is inspired from [AlexxNB's highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)
