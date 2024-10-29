@@ -29,8 +29,9 @@ import xml from 'highlight.js/lib/languages/xml';
 import svelte from 'highlight.svelte';
 
 // register each language definition
-hljs.registerLanguage([lang-name], [lang-module]);
+hljs.registerLanguage([lang - name], [lang - module]);
 ```
+
 ### 2. Full Import (Less Optimal)
 
 If you prefer to load all languages provided by `highlight.js`, you can use this approach. However, this may significantly increase your bundle size since it imports all available languages.
@@ -45,7 +46,7 @@ hljs.registerLanguage('svelte', svelte);
 ## Usage
 
 > Follow [optimized importing](#1-optimized-imports-recommended).\
-Usage examples are based on [less optimal way](#2-full-import-less-optimal) to reduce docs length.
+> Usage examples are based on [less optimal way](#2-full-import-less-optimal) to reduce docs length.
 
 ### Node.js / `require`
 
@@ -72,7 +73,9 @@ const highlightedCode = hljs.highlight(code, { language: 'svelte' }).value;
 <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
 <script src="https://unpkg.com/highlight.svelte@latest/dist/svelte.min.js"></script>
 
-<script>hljs.highlightAll();</script>
+<script>
+  hljs.highlightAll();
+</script>
 
 <pre><code class="language-svelte">{code}</code></pre>
 ```
@@ -81,8 +84,9 @@ const highlightedCode = hljs.highlight(code, { language: 'svelte' }).value;
 
 Project is powered by nx workspace.\
 Follow basic steps:
+
 1. clone repo
-2. `cd` into dir
+2. `cd` into cloned repo
 3. `npm i`
 
 ```bash
