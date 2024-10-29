@@ -11,7 +11,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/moonlitgrace/highlight.js-svelte.git",
-    "directory": "packages/highlight.js-svelte"
+    "directory": "packages/main"
   },
   "scripts": {
     "build": "tsup"
