@@ -30,9 +30,5 @@
     "target": "es2022",
     "verbatimModuleSyntax": false
   },
-  "exclude": [
-    "**/node_modules",
-    "**/build",
-    "**/dist"
-  ]
+  "exclude": ["**/node_modules", "**/build", "**/dist"]
 }
