@@ -6,65 +6,65 @@ Description: Components of Svelte Framework
 Link: https://github.com/AlexxNB/highlightjs-svelte/blob/master/src/svelte.js
 */
 
-import type { HLJSApi } from 'highlight.js';
+import type { HLJSApi } from "highlight.js";
 
-export default function (hljs: HLJSApi) {
+export default function(hljs: HLJSApi) {
   return {
-    subLanguage: 'xml',
+    subLanguage: "xml",
     contains: [
-      hljs.COMMENT('<!--', '-->', {
+      hljs.COMMENT("<!--", "-->", {
         relevance: 10,
       }),
       {
         begin: /<script(?!.*lang=["']ts["'])>/gm,
         end: /<\/script>/gm,
-        subLanguage: 'javascript',
+        subLanguage: "javascript",
         excludeBegin: true,
         excludeEnd: true,
         contains: [
           {
             begin: /^\s*\$:/gm,
             className: 'keyword',
-          },
-        ],
+          }
+        ]
       },
       {
         begin: /<script\s+lang=["']ts["']>/gm,
         end: /<\/script>/gm,
-        subLanguage: 'typescript',
+        subLanguage: "typescript",
         excludeBegin: true,
         excludeEnd: true,
         contains: [
           {
             begin: /^\s*\$:/gm,
             className: 'keyword',
-          },
-        ],
+          }
+        ]
       },
       {
         begin: /^(\s*)(<style.*>)/gm,
         end: /^(\s*)(<\/style>)/gm,
-        subLanguage: 'css',
+        subLanguage: "css",
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /\{/gm,
         end: /\}/gm,
-        subLanguage: 'javascript',
+        subLanguage: "javascript",
         contains: [
           {
             begin: /\{/,
             end: /\}/,
-            skip: true,
+            skip: true
           },
           {
             begin: /([#:\/@])(if|else|each|await|then|catch|debug|html)/gm,
             className: 'keyword',
             relevance: 10,
-          },
+          }
         ],
-      },
-    ],
+      }
+    ]
   };
 }

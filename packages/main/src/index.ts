@@ -1,1 +1,1 @@
-export { default } from './svelte.ts';
+export { default } from "./svelte.ts";
