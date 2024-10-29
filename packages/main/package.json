@@ -41,7 +41,7 @@
     "hljs"
   ],
   "devDependencies": {
-    "@types/highlight.js": "^9.12.4",
+    "@types/highlight.js": "^10.1.0",
     "@types/node": "^22.8.1",
     "highlight.js": "^11.10.0",
     "tsup": "^8.3.5",
