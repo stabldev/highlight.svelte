@@ -76,21 +76,6 @@ hljs.registerLanguage('svelte', svelte);
 <pre><code class="language-svelte">{code}</code></pre>
 ```
 
-## Development
-
-Project is powered by nx workspace.\
-Follow basic steps:
-1. clone repo
-2. `cd` into dir
-3. `npm i`
-
-```bash
-npm run dev
-```
-
-This will build package and spin up an example svelte-vite app with package installed.\
-Visit: [localhost:5173](http://localhost:5173)
-
 ## Credits
 
 Project is inspired from [AlexxNB's highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)
