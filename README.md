@@ -44,7 +44,7 @@ hljs.registerLanguage('svelte', svelte);
 
 ## Usage
 
-Follow recommended way of [importing](#1-optimized-imports-recommended).\
+> Follow [optimized importing](#1-optimized-imports-recommended).\
 Usage examples are based on [less optimal way](#2-full-import-less-optimal) to reduce docs length.
 
 ### Node.js / `require`
@@ -63,6 +63,7 @@ import hljs from 'highlight.js';
 import svelte from 'highlight.svelte';
 
 hljs.registerLanguage('svelte', svelte);
+const highlightedCode = hljs.highlight(code, { language: 'svelte' }).value;
 ```
 
 ### Browser / `cdn`
