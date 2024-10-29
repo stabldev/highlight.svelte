@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>highlight.svelte - example-vanilla</title>
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/default.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://unpkg.com/highlight.svelte@0.0.2/dist/index.global.js"></script>
+
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <pre>
+      <code class="language-svelte">Hello, {name}!</code>
+    </pre>
+  </body>
+</html>
