@@ -4,7 +4,7 @@ export default defineConfig((options: Options) => ({
   entry: ['./src/index.ts'],
   clean: true,
   dts: true,
-  format: ['esm', 'cjs'],
+  format: ['esm', 'cjs', 'iife'],
   tsconfig: "./tsconfig.json",
   ...options,
 }));
