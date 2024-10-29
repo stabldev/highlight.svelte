@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>highlight.svelte - example-vanilla</title>
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+
+    <script src="https://unpkg.com/highlight.svelte@0.0.3/dist/svelte.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <pre>
+      <code class="language-svelte">
+&lt;script lang="ts"&gt;
+  let count: number = 0;
+  () =&gt; count++;
+  Array.from([1, 2, 3]);
+  ...function_call(1, true, 'hello')
+&lt;/script&gt;
+
+&lt;button on:click={ ({hello}) =&gt; count++ }&gt;Hello&lt;/button&gt;
+
+&lt;h1&gt;{ Array.from([{one: 1}, 2, 3]); }&lt;/h1&gt;
+
+&lt;ul&gt;
+  {#each Array(10).map((_, i) =&gt; i) as { 1, 2, 3 }, index (key) }
+      &lt;Component prop={Array.from([1, 2, 3])}  {...function_call(args) } /&gt;
+  {/each}
+&lt;/ul&gt;
+
+{@debug value}
+
+&lt;style&gt;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+&lt;/style&gt;
+      </code>
+    </pre>
+  </body>
+</html>
+
