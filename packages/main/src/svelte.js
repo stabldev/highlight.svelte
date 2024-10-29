@@ -6,9 +6,7 @@ Description: Components of Svelte Framework
 Link: https://github.com/AlexxNB/highlightjs-svelte/blob/master/src/svelte.js
 */
 
-import type { HLJSApi } from 'highlight.js';
-
-export default function (hljs: HLJSApi) {
+export default function (hljs) {
   return {
     subLanguage: 'xml',
     contains: [
