@@ -7,7 +7,7 @@
   import css from 'highlight.js/lib/languages/css';
   import xml from 'highlight.js/lib/languages/xml';
   // import svelte definition from package
-  import svelte from 'highlight.js-svelte';
+  import svelte from 'highlight.svelte';
 
   const code = `
 <script lang="ts">
@@ -46,11 +46,7 @@
   const html = hljs.highlight(code, { language: 'svelte' }).value;
 </script>
 
-<svelte:head>
-  <title>highlight.js-svelte</title>
-</svelte:head>
-
-<h1>highlight.js-svelte</h1>
+<h1>highlight.svelte</h1>
 
 <pre
   style="background-color: lightcyan; margin: 0; padding: 1rem; width: max-content;">

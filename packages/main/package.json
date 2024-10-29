@@ -1,16 +1,16 @@
 {
-  "name": "highlight.js-svelte",
+  "name": "highlight.svelte",
   "version": "0.0.1",
   "description": "Svelte language definition for highlight.js",
   "author": "moonlitgrace",
   "license": "MIT",
-  "homepage": "https://github.com/moonlitgrace/highlight.js-svelte#readme",
+  "homepage": "https://github.com/moonlitgrace/highlight.svelte#readme",
   "bugs": {
-    "url": "https://github.com/moonlitgrace/highlight.js-svelte/issues"
+    "url": "https://github.com/moonlitgrace/highlight.svelte/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moonlitgrace/highlight.js-svelte.git",
+    "url": "git+https://github.com/moonlitgrace/highlight.svelte.git",
     "directory": "packages/main"
   },
   "scripts": {
