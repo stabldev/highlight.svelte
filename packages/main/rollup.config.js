@@ -1,10 +1,12 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
+import { dts } from 'rollup-plugin-dts';
 
-import pkg from './package.json';
+import { readFileSync } from 'fs';
+const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
 
-/** @type {import('rollup').RollupOptions} */
+/** @type {import('rollup').RollupOptions[]} */
 const config = [
   {
     input: './src/index.js',
@@ -23,7 +25,11 @@ const config = [
     },
     external: false,
     plugins: [resolve(), commonjs(), terser()],
-  },
+  }, {
+    input: './src/index.d.ts',
+    output: { file: pkg.types, format: 'es' },
+    plugins: [dts()]
+  }
 ];
 
 export default config;
