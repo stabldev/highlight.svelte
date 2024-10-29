@@ -1,7 +1,6 @@
 {
   "name": "highlight.js-svelte",
   "version": "0.0.1",
-  "type": "module",
   "description": "Svelte language definition for highlight.js",
   "author": "moonlitgrace",
   "license": "MIT",
@@ -20,6 +19,7 @@
   "files": [
     "dist"
   ],
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
