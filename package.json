@@ -2,7 +2,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npm run build && nx run example-svelte:dev",
-    "build": "nx run highlight.js-svelte:build",
+    "build": "nx run highlight.svelte:build",
     "format": "prettier . --write",
     "changeset": "changeset",
     "release": "npm run release:version && npm run release:publish",
