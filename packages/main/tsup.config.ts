@@ -5,6 +5,6 @@ export default defineConfig((options: Options) => ({
   clean: true,
   dts: true,
   format: ['esm', 'cjs', 'iife'],
-  tsconfig: "./tsconfig.json",
+  tsconfig: './tsconfig.json',
   ...options,
 }));
