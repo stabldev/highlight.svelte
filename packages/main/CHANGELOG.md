@@ -1,5 +1,11 @@
 # highlight.svelte
 
+## 0.0.5
+
+### Patch Changes
+
+- 9f553ca: fix: remove browser field from package.json
+
 ## 0.0.4
 
 ### Patch Changes
