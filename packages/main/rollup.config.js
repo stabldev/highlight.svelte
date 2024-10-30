@@ -21,11 +21,10 @@ const config = [
   {
     input: './src/browser.js',
     output: {
-      file: pkg.browser,
+      file: pkg.unpkg,
       name: 'svelte',
       format: 'iife',
     },
-    external: false,
     plugins: [resolve(), commonjs(), terser()],
   },
   {

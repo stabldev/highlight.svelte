@@ -23,7 +23,6 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "browser": "./dist/svelte.min.js",
   "unpkg": "./dist/svelte.min.js",
   "keywords": [
     "highlight.js",
