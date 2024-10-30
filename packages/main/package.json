@@ -34,7 +34,7 @@
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@types/node": "^22.8.2",
+    "@types/node": "^22.8.4",
     "highlight.js": "^11.10.0",
     "rollup": "^4.24.2",
     "rollup-plugin-dts": "^6.1.1"
