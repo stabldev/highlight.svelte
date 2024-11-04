@@ -4,7 +4,7 @@
 Updated fork of [`highlightjs-svelte`](https://github.com/AlexxNB/highlightjs-svelte)
 
 ![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/highlight.svelte?style=for-the-badge)
+![NPM Downloads](https://img.shields.io/npm/dw/highlight.svelte?style=for-the-badge)
 
 ## Installation
 
