@@ -1,5 +1,5 @@
 <script lang="ts">
-  import 'highlight.js/styles/github.css';
+  import 'highlight.js/styles/github-dark.css';
   import hljs from 'highlight.js/lib/core';
 
   import javascript from 'highlight.js/lib/languages/javascript';
@@ -10,43 +10,24 @@
   import svelte from 'highlight.svelte';
 
   const code = `
+<!-- highlight.svelte -->
+
 <script lang="ts">
-  let count: number = 0;
-  () => count++;
-  Array.from([1, 2, 3]);
-  ...function_call(1, true, 'hello')
-  let props = $props();
+  let width = $state(0);
+  const area = $derived(width * 2);
 
   $effect(() => {
-    console.log(props.hello);
+    console.log(area);
   });
-  
-  $effect.pre(() => {
-    console.log(props.hello);
-  });
-
-  $inspect(props);
-  let state = $state('hello');
 <\/script>
-
-<button on:click={ ({hello}) => count++ }>Hello</button>
-
-<h1>{ Array.from([{one: 1}, 2, 3]); }</h1>
 
 <ul>
   {#each Array(10).map((_, i) => i) as { 1, 2, 3 }, index (key) }
-      <Component prop={Array.from([1, 2, 3])}  {...function_call(args) } />
+    <Component prop={Array.from([1, 2, 3])}  {...function_call(args) } />
   {/each}
 </ul>
 
-{@debug value}
-
-<style>
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-<\/style>`;
+{@render value}`;
 
   hljs.registerLanguage('javascript', javascript);
   hljs.registerLanguage('typescript', typescript);
@@ -61,7 +42,7 @@
 <h1>highlight.svelte</h1>
 
 <pre
-  style="background-color: lightcyan; margin: 0; padding: 1rem; width: max-content;">
+  style="background-color: #151b23; color: #f0f6fc; font-weight: 600; margin: 0; padding: 1rem; width: max-content;">
   <code>
     {@html html}
   </code>
