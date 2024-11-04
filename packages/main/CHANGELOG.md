@@ -1,5 +1,12 @@
 # highlight.svelte
 
+## 0.0.6
+
+### Patch Changes
+
+- 0c83228: refactor: svelte definition
+- 8484f07: feat: Svelte 5 runes syntax support
+
 ## 0.0.5
 
 ### Patch Changes
