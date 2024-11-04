@@ -15,6 +15,18 @@
   () => count++;
   Array.from([1, 2, 3]);
   ...function_call(1, true, 'hello')
+  let props = $props();
+
+  $effect(() => {
+    console.log(props.hello);
+  });
+  
+  $effect.pre(() => {
+    console.log(props.hello);
+  });
+
+  $inspect(props);
+  let state = $state('hello');
 <\/script>
 
 <button on:click={ ({hello}) => count++ }>Hello</button>
