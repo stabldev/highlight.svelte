@@ -5,6 +5,8 @@
 ![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
 ![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/highlight.svelte?style=for-the-badge)
 
+![image](https://github.com/user-attachments/assets/91b34879-5347-4cf6-844f-041d93f002a6)
+
 ## Installation
 
 ```bash
