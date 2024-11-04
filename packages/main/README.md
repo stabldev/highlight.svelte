@@ -1,6 +1,7 @@
 # <img src="https://svelte.dev/favicon.png" height="40"> highlight.svelte
 
-**Svelte** Language Definition for highlight.js with Typescript support.
+**Svelte** Language Definition for highlight.js with Typescript support.\
+Updated fork of [`highlightjs-svelte`](https://github.com/AlexxNB/highlightjs-svelte)
 
 ![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
 ![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/highlight.svelte?style=for-the-badge)
@@ -44,7 +45,3 @@ const highlightedCode = hljs.highlight(code, { language: 'svelte' }).value;
 
 <pre><code class="language-svelte">{code}</code></pre>
 ```
-
-## Inspiration
-
- - AlexxNB's [highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)

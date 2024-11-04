@@ -1,9 +1,10 @@
 # <img src="https://svelte.dev/favicon.png" height="40"> highlight.svelte
 
-**Svelte** Language Definition for highlight.js with Typescript support.
+**Svelte** Language Definition for highlight.js with Typescript support.\
+Updated fork of [`highlightjs-svelte`](https://github.com/AlexxNB/highlightjs-svelte)
 
 ![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/highlight.svelte?style=for-the-badge)
+![NPM Downloads](https://img.shields.io/npm/dw/highlight.svelte?style=for-the-badge)
 
 ![image](https://github.com/user-attachments/assets/91b34879-5347-4cf6-844f-041d93f002a6)
 
@@ -92,7 +93,3 @@ Follow basic steps:
 
 This will build package and spin up an example svelte-vite app with package installed.\
 Visit: [localhost:5173](http://localhost:5173)
-
-## Inspiration
-
- - AlexxNB's [highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)
