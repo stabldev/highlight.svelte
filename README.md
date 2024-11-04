@@ -93,7 +93,3 @@ Follow basic steps:
 
 This will build package and spin up an example svelte-vite app with package installed.\
 Visit: [localhost:5173](http://localhost:5173)
-
-## Inspiration
-
- - AlexxNB's [highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)
