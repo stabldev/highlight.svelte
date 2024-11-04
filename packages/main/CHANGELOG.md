@@ -1,5 +1,12 @@
 # highlight.svelte
 
+## 0.1.0
+
+### Minor Changes
+
+- 9ede6eb: docs: update readme mentions
+  feat: minor release
+
 ## 0.0.6
 
 ### Patch Changes
