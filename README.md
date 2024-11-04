@@ -5,6 +5,8 @@
 ![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
 ![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/highlight.svelte?style=for-the-badge)
 
+![image](https://github.com/user-attachments/assets/91b34879-5347-4cf6-844f-041d93f002a6)
+
 ## Installation
 
 ```bash
@@ -85,17 +87,12 @@ const highlightedCode = hljs.highlight(code, { language: 'svelte' }).value;
 Project is powered by nx workspace.\
 Follow basic steps:
 
-1. clone repo
-2. `cd` into cloned repo
-3. `npm i`
-
-```bash
-npm run dev
-```
+1. `npm i`
+2. `npm run dev`
 
 This will build package and spin up an example svelte-vite app with package installed.\
 Visit: [localhost:5173](http://localhost:5173)
 
-## Credits
+## Inspiration
 
-Project is inspired from [AlexxNB's highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)
+ - AlexxNB's [highlightjs-svelte](https://github.com/AlexxNB/highlightjs-svelte)
