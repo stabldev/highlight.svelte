@@ -1,5 +1,11 @@
 # highlight.svelte
 
+## 0.1.1
+
+### Patch Changes
+
+- 30b3c87: docs: sync with main
+
 ## 0.1.0
 
 ### Minor Changes
