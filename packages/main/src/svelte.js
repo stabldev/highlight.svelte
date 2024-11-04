@@ -22,31 +22,7 @@ export default function(hljs) {
       ],
     },
     {
-      begin: /\$effect\.(pre|tracking|root)/,
-      className: 'title function_',
-      endsWithParent: true,
-      variants: [
-        {
-          begin: /\$effect\.(pre|tracking|root)/,
-          end: /(?=\s*\()/,
-          returnBegin: true,
-          excludeEnd: true,
-          relevance: 10,
-        },
-      ],
-    },
-    {
-      begin: /[#@](if|each|key|await|snippet|render|html|const|debug)/,
-      className: 'keyword',
-      relevance: 10,
-    },
-    {
       begin: /\b(bind|use|transition|in|out|animate|class|style):/gm,
-      className: 'variable',
-      relevance: 10,
-    },
-    {
-      begin: /^\s*(let|bind)\s+[a-zA-Z_][\w-]*/,
       className: 'variable',
       relevance: 10,
     },
@@ -87,14 +63,9 @@ export default function(hljs) {
           hljs.COMMENT(/\/\*/, /\*\//),
           { begin: /\{/, end: /\}/, skip: true },
           {
-            begin: /[\s:#@$%&*+\-|^~!=<>,./?;\s]+/,
+            begin: /[#@/][a-zA-Z_][\w-]*/,
             className: 'keyword',
             relevance: 10,
-          },
-          {
-            begin: /[a-zA-Z_][\w-]*/,
-            className: 'variable',
-            relevance: 0,
           },
         ],
       },
