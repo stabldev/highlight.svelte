@@ -1,7 +1,7 @@
 {
   "name": "highlight.svelte",
   "version": "0.1.1",
-  "description": "Svelte language definition for highlight.js",
+  "description": "Svelte Language Definition for highlight.js with Typescript support.",
   "author": "moonlitgrace",
   "license": "MIT",
   "homepage": "https://github.com/moonlitgrace/highlight.svelte#readme",
@@ -26,6 +26,7 @@
   "unpkg": "./dist/svelte.min.js",
   "keywords": [
     "highlight.js",
+    "typescript",
     "svelte",
     "hljs"
   ],
