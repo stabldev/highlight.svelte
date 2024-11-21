@@ -1,5 +1,11 @@
 # highlight.svelte
 
+## 0.1.2
+
+### Patch Changes
+
+- 9b3c734: chore: update packge configs
+
 ## 0.1.1
 
 ### Patch Changes
