@@ -11,7 +11,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@changesets/cli": "^2.27.10",
+    "@changesets/cli": "^2.27.11",
     "@nx/js": "20.1.2",
     "@swc-node/register": "~1.10.9",
     "@swc/core": "~1.10.4",
