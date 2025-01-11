@@ -3,15 +3,16 @@
 **Svelte** Language Definition for highlight.js with Typescript support.\
 Updated fork of [`highlightjs-svelte`](https://github.com/AlexxNB/highlightjs-svelte)
 
-![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=for-the-badge)
-![NPM Downloads](https://img.shields.io/npm/dw/highlight.svelte?style=for-the-badge)
+![NPM Version](https://img.shields.io/npm/v/highlight.svelte?style=flat-square)
+![NPM Downloads](https://img.shields.io/npm/dm/highlight.svelte?style=flat-square)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/moonlitgrace/highlight.svelte/ci.yml?style=flat-square)
 
 ![image](https://github.com/user-attachments/assets/91b34879-5347-4cf6-844f-041d93f002a6)
 
 ## Installation
 
 ```bash
-npm i highlight.js highlight.svelte
+npm install highlight.js highlight.svelte --save-dev
 ```
 
 ## Importing the Lib
