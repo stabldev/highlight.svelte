@@ -30,9 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build with nx
-        run: npm run build
-        env:
-          NX_DISABLE_DB: true
+        run: npm run build -- --skip-nx-cache
 
   merge:
     runs-on: ubuntu-latest
