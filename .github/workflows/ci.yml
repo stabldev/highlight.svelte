@@ -33,6 +33,7 @@ jobs:
         run: npm run build
         env:
           NX_DISABLE_DB: true
+          NX_SKIP_NX_CACHE: true
 
   merge:
     runs-on: ubuntu-latest
