@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build with nx
-        run: npm run build -- --skipNxCache
+        run: npm run build -- --skip-nx-cache --no-daemon
 
   merge:
     runs-on: ubuntu-latest
