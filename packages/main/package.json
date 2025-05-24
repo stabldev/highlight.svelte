@@ -24,6 +24,13 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "unpkg": "./dist/svelte.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "keywords": [
     "highlight.js",
     "typescript",
