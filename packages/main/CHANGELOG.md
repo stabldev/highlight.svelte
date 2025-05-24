@@ -1,5 +1,12 @@
 # highlight.svelte
 
+## 0.1.3
+
+### Patch Changes
+
+- 4648a81: chore: update deps and fix nx build
+- 010f5d4: fix: add exports condition in package.json
+
 ## 0.1.2
 
 ### Patch Changes
