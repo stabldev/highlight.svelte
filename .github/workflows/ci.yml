@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build with nx
-        run: npm run build
+        run: npm run build --skipNxCache
         env:
           NX_DISABLE_DB: true
           NX_SKIP_NX_CACHE: true
