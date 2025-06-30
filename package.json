@@ -17,7 +17,7 @@
     "@swc/core": "~1.12.5",
     "@swc/helpers": "~0.5.17",
     "nx": "21.2.1",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "tslib": "^2.8.1",
     "typescript": "~5.8.3"
   },
