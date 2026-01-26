@@ -43,7 +43,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@types/node": "^25.0.10",
     "highlight.js": "^11.11.1",
-    "rollup": "^4.55.1",
+    "rollup": "^4.56.0",
     "rollup-plugin-dts": "^6.3.0"
   }
 }
