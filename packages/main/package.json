@@ -44,6 +44,6 @@
     "@types/node": "^25.5.0",
     "highlight.js": "^11.11.1",
     "rollup": "^4.60.0",
-    "rollup-plugin-dts": "^6.4.0"
+    "rollup-plugin-dts": "^6.4.1"
   }
 }
