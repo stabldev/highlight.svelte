@@ -14,7 +14,7 @@
     "@changesets/cli": "^3.0.1",
     "@nx/js": "23.1.1",
     "@swc-node/register": "~1.12.1",
-    "@swc/core": "~1.15.47",
+    "@swc/core": "~1.16.1",
     "@swc/helpers": "~0.5.23",
     "nx": "23.1.1",
     "prettier": "^3.9.6",
