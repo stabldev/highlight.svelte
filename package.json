@@ -15,7 +15,7 @@
     "@nx/js": "24.0.3",
     "@swc-node/register": "~1.12.1",
     "@swc/core": "~1.16.22",
-    "@swc/helpers": "~0.5.23",
+    "@swc/helpers": "~0.5.24",
     "nx": "24.0.4",
     "prettier": "^3.9.10",
     "tslib": "^2.9.1",
